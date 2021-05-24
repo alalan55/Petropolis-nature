@@ -10,20 +10,21 @@ header {
     height: 70px;
     width: 100%;
     nav {
+       border: 1px solid red;
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        max-width: 1200px;
+        max-width: 1000px;
         margin: 0 auto;
-        padding: 0 0.2em;
+        padding: 0 0.9em;
         & > div,
         ul {
-            //  border: 1px solid;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border: 1px solid red;
+           // width: 100%;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
         }
         .logo {
             font-weight: 700;
@@ -86,6 +87,7 @@ header {
 //conteudo
 .conteudo {
     width: 100%;
+    // padding: 2em;
     // position: absolute;
     background: $background-paste1;
     top: 70px;
@@ -180,7 +182,79 @@ header {
              
             }
             &>div{
-                flex:1 1 300px;
+                flex:1 1 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .sobre{
+        width: 100%;
+        padding: 1em;
+        .titulo__sobre {
+            display: flex;
+            flex-direction: column;
+            .secundario {
+                font-size: $secondary-font-size;
+                font-weight: 100;
+                transition: $transitio-3ms ease-in-out;
+            }
+            small {
+                padding: 0.5em;
+                font-weight: 600;
+            }
+        }
+        .descricao__sobre{
+            blockquote{
+                text-align: justify ;
+                padding: 1.5em 0;
+            }
+        }
+        .ceo{
+            text-align: center;
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+    .contato{
+        width: 100%;
+        padding: 1em;
+        .titulo__contato{
+            display: flex;
+            flex-direction: column;
+            .secundario {
+                font-size: $secondary-font-size;
+                font-weight: 100;
+                transition: $transitio-3ms ease-in-out;
+            }
+            small {
+                padding: 0.5em;
+                font-weight: 600;
+            }
+        }
+        .contatos{
+            margin: 1.5em 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .wpp{
+            text-align: center;
+            margin:  5em 0;
+            a{
+                padding: .5em;
+                border-radius: 10px;
+                text-decoration: none;
+                color: black;
+                transition: .2s ease;
+
+                &:hover{
+                    background: $background-paste2;
+                }
+
+
             }
         }
     }
@@ -199,13 +273,26 @@ header {
         font-size: $secondary-font-size-600 !important;
       }
     }
+    .titulo__descricao{
+        text-align: center;
+        display: inline-block;
+    }
+    .descricao__apresentacao{
+        margin: 0 0 1.5em 0;
+    }
   .secundario{
       font-size: $secondary-font-size-600 !important;
-      border: 1px solid red !important;
   }
   .titulo__projetos{
+      margin: 0 0 1.5em 0;
       small{
           padding-bottom: .4em !important;
+      }
+  }
+  .titulo__card{
+      margin: 0 0 1.5em 0;
+      span{
+          font-size: 1.5rem !important;
       }
   }
 
